@@ -1,85 +1,253 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/css/starter.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Bootstrap npm starter</title>
   </head>
   <body>
-    <div class="col-md-8 py-5 px-3 mx-auto">
 
-      <header class="pb-3 mb-5 border-bottom">
-        <h1 class="h4">
-          <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="d-inline-block mr-2" viewBox="0 0 118 94" role="img"><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>
-            <span>npm starter</span>
+    <header class="container-fluid">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#">
+            <img src="assets/images/Logo.png" alt="">
           </a>
-        </h1>
-      </header>
+          <nav>
+            <a class="text-dark mr-3" href="#">Программы</a>
+            <a class="text-dark mr-3" href="#">Рассылки</a>
+            <a class="text-dark mr-3" href="#">Выдача призов</a>
+            <a class="text-dark mr-3" href="#">Статистика</a>
+          </nav>
+          <div class="lk d-flex">
+            <div class="mr-3">Тариф: <span class="font-weight-bold text-primary">ПРОФИ</span> <small class="text-light">до 02.09.2022</small></div>
+            <a class="font-weight-bold" href="#">Мой Профиль</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-      <h1>Get started with Bootstrap</h1>
-      <div class="col-lg-8 px-0">
-        <p class="lead">You've successfully loaded up the Bootstrap npm starter project! It's loaded up with <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap 4</a>, <a href="https://icons.getbootstrap.com">Bootstrap Icons</a>, and tooling for compiling our Sass and JavaScript to your needs.</p>
-        <p>If this button appears blue and the link appears purple, you've done it!</p>
+    <section class="container mt-5">
+      <h1 class="h2 text-primary">Создание игры программы лояльности</h1>
+      
+      <div class="p2">Выберите игру для программы лояльности</div>
+      
+      <div class="breadcrumbs my-3">
+        <a class="text-light font-weight-bold text-decoration-none" href="#">
+          <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-9.53674e-07 6.5C0.00783443 6.24352 0.109695 6.02367 0.321253 5.82582L6.41724 0.249154C6.59745 0.0879369 6.80901 0 7.06758 0C7.59256 0 8 0.38106 8 0.872041C8 1.10654 7.89814 1.32638 7.71792 1.49493L2.2331 6.5L7.71792 11.5051C7.89814 11.6736 8 11.8861 8 12.128C8 12.6189 7.59256 13 7.06758 13C6.81685 13 6.59745 12.9121 6.41724 12.7508L0.321253 7.16685C0.10186 6.97632 -9.53674e-07 6.75648 -9.53674e-07 6.5Z" fill="#C4C4C4"/>
+            </svg>
+            Назад</a>
+      </div>
+      
+      <div class="progress-tabs">
+        <ul class="progress-tabs__list d-flex justify-content-between list-unstyled font-weight-bold">
+          <li class="text-primary opacity-50">Сбор контактов</li>
+          <li class="text-primary">Игра</li>
+          <li class="text-light">Настройка</li>
+          <li class="text-light">Предпросмотр</li>
+          <li class="text-light">Рассылка</li>
+          <li class="text-light">Готово!</li>
+        </ul>
+        <div style="width: 30%" class="progress-tabs__bar"></div>
       </div>
 
-      <button type="button" class="btn btn-primary mr-3" data-toggle="modal" data-target="#exampleModal">Toggle example modal</button>
-      <a href="#" class="text-success">Example link</a>
+      <div class="cards mt-5">
+        <div class="row row-cols-1 row-cols-md-4">
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+          <div class="col mb-4">
+            <div class="card">
+              <div class="card-image-wrapper">
+                <img src="assets/images/default-picture.svg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body text-center">
+                <div class="card-title my-4 h5">Название игры</div>
+                <button class="btn btn-primary font-weight-bold rounded-pill w-100 mb-3">Выбрать</button>
+                <button class="btn btn-outline font-weight-bold text-primary rounded-pill w-100">Предпросмотр</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Success!</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              If you're seeing this modal after clicking the button on the page, Bootstrap's CSS and JS are both working properly.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
+        <div class="row mt-3">
+          <div class="col-12 text-center">
+            <a class="font-weight-bold" href="#">Посмотреть ещё</a>
+            <svg width="12" height="23" viewBox="0 0 12 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.46967 22.5303C5.76256 22.8232 6.23744 22.8232 6.53033 22.5303L11.3033 17.7574C11.5962 17.4645 11.5962 16.9896 11.3033 16.6967C11.0104 16.4038 10.5355 16.4038 10.2426 16.6967L6 20.9393L1.75736 16.6967C1.46447 16.4038 0.989593 16.4038 0.6967 16.6967C0.403806 16.9896 0.403806 17.4645 0.6967 17.7574L5.46967 22.5303ZM5.25 3.27835e-08L5.25 22L6.75 22L6.75 -3.27835e-08L5.25 3.27835e-08Z" fill="#8A60FF"/>
+              </svg>
           </div>
         </div>
       </div>
 
-      <hr class="my-5 w-25 mx-0">
+    </section>
 
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Adding Bootstrap Icons</h2>
-          <p><a href="https://icons.getbootstrap.com">Bootstrap Icons</a> are included with the SVG sprite here, but there are other <a href="https://icons.getbootstrap.com/#usage">usage options</a>, too. They're styleable with text utilities and more.</p>
-
-          <svg class="bi text-danger" width="32" height="32">
-            <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#heart-fill"/>
-          </svg>
-          <svg class="bi text-dark" width="32" height="32">
-            <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#toggles"/>
-          </svg>
-          <svg class="bi text-primary" width="32" height="32">
-            <use xlink:href="node_modules/bootstrap-icons/bootstrap-icons.svg#shop"/>
-          </svg>
-        </div>
-
-        <div class="col-md-6">
-          <h2>Guides</h2>
-          <p>Read more detailed instructions and documentation on using or contributing to Bootstrap.</p>
-          <ul class="icon-list">
-            <li><a href="https://getbootstrap.com/docs/4.6/getting-started/introduction">Bootstrap quick start guide</a></li>
-            <li><a href="https://getbootstrap.com/docs/4.6/getting-started/webpack">Bootstrap Webpack guide</a></li>
-            <li><a href="https://getbootstrap.com/docs/4.6/getting-started/build-tools">Contributing to Bootstrap</a></li>
-          </ul>
+    <footer class="container-fluid mt-5 bg-primary py-5 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 footer-list d-flex flex-column align-items-end justify-content-end">
+            <div class="mb-3">
+              <span class="font-weight-bold">О компании</span>
+              <ul class="list-unstyled mt-3">
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+              </ul>
+            </div>
+            <div class="mb-3">
+              <span class="font-weight-bold">Поддержка</span>
+              <ul class="list-unstyled mt-3">
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 footer-list">
+            <div class="mb-3">
+              <span class="font-weight-bold">Информация</span>
+              <ul class="list-unstyled mt-3">
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-
-      <hr class="my-5">
-
-      <p class="text-muted">Created and open sourced by the Bootstrap team. Licensed MIT.</p>
-    </div>
+    </footer>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script type="module" src="assets/js/starter.js"></script>

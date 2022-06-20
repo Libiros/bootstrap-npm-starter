@@ -32,11 +32,47 @@ $enable-shadows: true;
 $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
-$success: #7952b3;
+$primary: #8A60FF;
+$secondary: #FFD989;
+$decor-1: #95B1FE;
+$decor-2: #B195FE;
+$success: #28A745;
+$danger: #F1565C;
+$dark: #303030;
+$body: #303030;
+$muted: #C4C4C4;
+$light: #C4C4C4;
 
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
+
+$h1-font-size: 4rem;
+$h2-font-size: 2.5rem;
+$h3-font-size: 2rem;
+.p1 { font-size: 1.5rem; }
+.p2 { font-size: 1.25rem; }
+.p3 { font-size: 0.875rem; }
+
+.btn-outline {
+  background: transparent !important;
+  border: 1px solid $primary !important;
+}
+
+@media (max-width: 475px) {
+  .p1 { font-size: 0.875rem; }
+  .p2 { font-size: 0.8rem; }
+  .p3 { font-size: 0.75rem; }
+  h1,.h1 {
+    font-size: 1.75rem !important;
+  }
+  h2,.h2 {
+    font-size: 1.5rem !important;
+  }
+  h3,.h3 {
+    font-size: 1.25rem !important;
+  }
+}
 
 @import "bootstrap/scss/root"; // Required
 @import "bootstrap/scss/reboot"; // Required
@@ -73,16 +109,18 @@ $success: #7952b3;
 @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
 
+.opacity-0 { opacity: 0 !important; }
+.opacity-25 { opacity: .25 !important; }
+.opacity-50 { opacity: .5 !important; }
+.opacity-75 { opacity: .75 !important; }
+.opacity-100 { opacity: 1 !important; }
+
 
 //
 // Custom styles
 //
 
 @import "icon-list";
-
-body {
-  padding: 3rem 1.5rem;
-}
 
 // Style Bootstrap icons
 .bi {
