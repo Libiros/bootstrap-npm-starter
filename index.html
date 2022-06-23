@@ -9,21 +9,25 @@
   </head>
   <body>
 
-    <header class="container-fluid">
+    <header class="header container-fluid">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-          <a href="#">
+          <a class="header__logo" href="#">
             <img src="assets/images/Logo.png" alt="">
           </a>
-          <nav>
-            <a class="text-dark mr-3" href="#">Программы</a>
-            <a class="text-dark mr-3" href="#">Рассылки</a>
-            <a class="text-dark mr-3" href="#">Выдача призов</a>
-            <a class="text-dark mr-3" href="#">Статистика</a>
-          </nav>
-          <div class="lk d-flex">
-            <div class="mr-3">Тариф: <span class="font-weight-bold text-primary">ПРОФИ</span> <small class="text-light">до 02.09.2022</small></div>
-            <a class="font-weight-bold" href="#">Мой Профиль</a>
+          <button class="burger bg-white border-0 text-primary">Меню <img src="assets/images/burger.svg" alt=""></button>
+          <div class="mobile-menu">
+            <button class="mobile-menu__close-button bg-white border-0"><img src="assets/images/burger.svg" alt=""></button>
+            <nav>
+              <a class="text-dark mr-3" href="#">Программы</a>
+              <a class="text-dark mr-3" href="#">Рассылки</a>
+              <a class="text-dark mr-3" href="#">Выдача призов</a>
+              <a class="text-dark mr-3" href="#">Статистика</a>
+            </nav>
+            <div class="lk d-flex">
+              <div class="mr-3">Тариф: <span class="font-weight-bold text-primary">ПРОФИ</span> <small class="text-light">до 02.09.2022</small></div>
+              <a class="font-weight-bold" href="#">Мой Профиль</a>
+            </div>
           </div>
         </div>
       </div>

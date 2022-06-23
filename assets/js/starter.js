@@ -20,3 +20,14 @@
 
 import "../../node_modules/bootstrap/js/dist/util.js";
 import "../../node_modules/bootstrap/js/dist/modal.js";
+
+const burger = document.querySelector('.burger')
+const closeButton = document.querySelector('.mobile-menu__close-button')
+
+burger.addEventListener('click', toggleBurgerMenu)
+closeButton.addEventListener('click', toggleBurgerMenu)
+
+function toggleBurgerMenu() {
+  const mobileMenu = document.querySelector('.mobile-menu')
+  mobileMenu.classList.toggle('mobile-menu_active')
+}
