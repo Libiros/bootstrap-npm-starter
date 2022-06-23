@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/starter.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Bootstrap npm starter</title>
+  </head>
+  <body>
+
+    <header class="container-fluid">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#">
+            <img src="assets/images/Logo.png" alt="">
+          </a>
+          <nav>
+            <a class="text-dark mr-3" href="#">Программы</a>
+            <a class="text-dark mr-3" href="#">Рассылки</a>
+            <a class="text-dark mr-3" href="#">Выдача призов</a>
+            <a class="text-dark mr-3" href="#">Статистика</a>
+          </nav>
+          <div class="lk d-flex">
+            <div class="mr-3">Тариф: <span class="font-weight-bold text-primary">ПРОФИ</span> <small class="text-light">до 02.09.2022</small></div>
+            <a class="font-weight-bold" href="#">Мой Профиль</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="container add-program mt-5">
+      <h1 class="h2 text-primary">Создание игры программы лояльности</h1>
+      
+      <div class="p2">Выберите игру для программы лояльности</div>
+      
+      <div class="breadcrumbs my-3">
+        <a class="text-light font-weight-bold text-decoration-none" href="#">
+          <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-9.53674e-07 6.5C0.00783443 6.24352 0.109695 6.02367 0.321253 5.82582L6.41724 0.249154C6.59745 0.0879369 6.80901 0 7.06758 0C7.59256 0 8 0.38106 8 0.872041C8 1.10654 7.89814 1.32638 7.71792 1.49493L2.2331 6.5L7.71792 11.5051C7.89814 11.6736 8 11.8861 8 12.128C8 12.6189 7.59256 13 7.06758 13C6.81685 13 6.59745 12.9121 6.41724 12.7508L0.321253 7.16685C0.10186 6.97632 -9.53674e-07 6.75648 -9.53674e-07 6.5Z" fill="#C4C4C4"/>
+            </svg>
+            Назад</a>
+      </div>
+      
+      <div class="progress-tabs">
+        <ul class="progress-tabs__list d-flex justify-content-between list-unstyled font-weight-bold">
+          <li class="text-primary opacity-50">Сбор контактов</li>
+          <li class="text-primary opacity-50">Игра</li>
+          <li class="text-primary">Настройка</li>
+          <li class="text-light">Предпросмотр</li>
+          <li class="text-light">Рассылка</li>
+          <li class="text-light">Готово!</li>
+        </ul>
+        <div style="width: 50%" class="progress-tabs__bar"></div>
+      </div>
+
+      <div class="add-program__group mt-5">
+        <p>Установите количество дней проведения программы</p>
+        <div class="input-group mb-3 add-program__days">
+          <button class="add-program__control mr-3" id="control-minus">-</button>
+          <input type="text" class="form-control border-primary rounded-left border-right-0 p-2" maxlength="3" id="input-days">
+          <div class="input-group-append">
+            <span class="input-group-text bg-primary text-white border-primary rounded-right">дней</span>
+          </div>
+          <button class="add-program__control ml-3" id="control-plus">+</button>
+        </div>
+      </div>
+
+      <div class="add-program__group mt-5">
+        <p>Установите время и дату запуска программы лояльности</p>
+        <div class="form-inline ml-4">
+          <div class="form-check mr-5">
+            <input class="custom-control-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="custom-control-label" for="exampleRadios1">
+              Запустить сразу
+            </label>
+          </div>
+          <div class="form-check mr-5">
+            <input class="custom-control-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="custom-control-label" for="exampleRadios2">
+              Выбрать дату запуска
+            </label>
+            <input type="date" class="ml-3">
+          </div>
+        </div>
+      </div>
+
+      <div class="add-program__group mt-5">
+        <p class="mb-0">Загрузить продвигаемые товары</p>
+        <small class="text-light">Товаров выбрано 0 из 5</small>
+        <div class="mt-3">
+          <button class="btn add-program__custom-button btn-outline-secondary mb-3">Выбрать из загруженных товаров</button><br>
+          <button class="btn add-program__custom-button btn-outline-primary">Загрузить свой товар</button>
+        </div>
+      </div>
+
+      <div class="add-program__group mt-5">
+        <div class="row">
+          <div class="add-program__card col-12 col-md-4 py-3">
+            <div class="custom-checkbox mx-4">
+              <input class="custom-control-input" type="checkbox" name="addGift_program_1" id="addGift_program_1">
+              <label class="custom-control-label _checkbox" for="addGift_program_1">
+                <small>Добавить поощрительный приз за участие</small>
+              </label>
+            </div>
+            <div class="add-program__card-body">
+              <div class="card-body__title mt-3 border-bottom pb-3">
+                ГЛАВНЫЙ ПРИЗ
+              </div>
+              <p class="mt-3 mb-0 text-primary">Выберите вид приза</p>
+              <select class="form-control">
+                <option>Подарочный сертификат</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+              <p class="mt-3 mb-0 text-primary">Установите сумму сертификата</p>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">RUB</span>
+                </div>
+                <input type="text" class="form-control">
+              </div>
+              <p class="mt-3 mb-0 text-primary">Установите параметры выдачи приза</p>
+              <div class="custom-checkbox mx-4">
+                <input class="custom-control-input" type="checkbox" name="delivery" id="delivery_1">
+                <label class="custom-control-label _checkbox" for="delivery_1">
+                  <small>Доставка курьером</small>
+                </label>
+              </div>
+              <div class="custom-checkbox mx-4">
+                <input class="custom-control-input" type="checkbox" name="delivery" id="delivery_2">
+                <label class="custom-control-label _checkbox" for="delivery_2">
+                  <small>Интернет-доставка</small>
+                </label>
+              </div>
+              <div class="custom-checkbox mx-4">
+                <input class="custom-control-input" type="checkbox" name="delivery" id="delivery_3">
+                <label class="custom-control-label _checkbox" for="delivery_3">
+                  <small>Самовывоз</small>
+                </label>
+              </div>
+              <p class="mt-3 mb-0 text-primary">Установите количество дней действия приза после окончания конкурса</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                  <span class="input-group-text">Дней</span>
+                </div>
+              </div>
+              <p class="text-right text-light cursor-pointer">Очистить</p>
+            </div>
+          </div>
+          <div class="add-program__card col-12 col-md-4 d-flex align-items-center justify-content-center text-primary cursor-pointer" id="add-program-button">
+            <button class="add-program__control ml-3 mr-3">+</button>
+            Добавить приз
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer class="container-fluid mt-5 bg-primary py-5 text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 footer-list d-flex flex-column align-items-end justify-content-end">
+            <div class="mb-3">
+              <span class="font-weight-bold">О компании</span>
+              <ul class="list-unstyled mt-3">
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+              </ul>
+            </div>
+            <div class="mb-3">
+              <span class="font-weight-bold">Поддержка</span>
+              <ul class="list-unstyled mt-3">
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 footer-list">
+            <div class="mb-3">
+              <span class="font-weight-bold">Информация</span>
+              <ul class="list-unstyled mt-3">
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+                <li><a class="text-white" href="#">lorem ipsum</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script type="module" src="assets/js/starter.js"></script>
+    <script>
+      const minus = document.getElementById('control-minus')
+      const plus = document.getElementById('control-plus')
+      const inputDays = document.getElementById('input-days')
+
+      minus.addEventListener('click', () => {
+        controlDays('minus')
+      })
+      plus.addEventListener('click', () => {
+        controlDays('plus')
+      })
+
+      function controlDays(type) {
+        if (!inputDays.value) {
+          inputDays.value = 0
+        }
+
+        if (type === 'plus') {
+          inputDays.value = +inputDays.value + 1
+        }
+
+        if (type === 'minus') {
+          inputDays.value = +inputDays.value ? (+inputDays.value - 1) : 0
+        }
+      }
+
+      const addProgramButton = document.getElementById('add-program-button')
+      addProgramButton.addEventListener('click', () => {
+        const firstCard = document.querySelector('.add-program__card')
+        const newCard = firstCard.cloneNode(true);
+        firstCard.insertAdjacentElement('afterend',newCard);
+      })
+    </script>
+  </body>
+</html>
