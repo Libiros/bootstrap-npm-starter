@@ -104,6 +104,19 @@ header, .header {
         display: flex;
         flex-direction: column;
         margin-bottom: 1rem;
+        &__profile {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        &__dropdown {
+          box-shadow: none;
+          border: 0;
+          opacity: 1;
+          visibility: visible;
+          pointer-events: all;
+          position: relative;
+        }
       }
     }
   }
@@ -111,6 +124,51 @@ header, .header {
     display: none;
     @media (max-width: 1200px) {
       display: block;
+    }
+  }
+  .lk {
+    &__dropdown {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: all .3s ease;
+      position: absolute;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      width: 120px;
+      padding: 0.5rem;
+      left: 0;
+      margin-top: -2px;
+    }
+    &__profile {
+      position: relative;
+      .dropdown-item {
+        position: relative;
+      }
+      .dropdown-item:after {
+        content: "";
+        background-image: url(../images/chevron.svg);
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        background-repeat: no-repeat;
+        top: 0px;
+        right: 4px;
+        transform: rotate(180deg);
+      }
+      .dropdown-item.collapsed:after {
+        transform: rotate(0);
+        top: 8px;
+        right: 0;
+      }
+    }
+    &__profile:hover{
+      .lk__dropdown {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+      }
     }
   }
 }
